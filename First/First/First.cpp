@@ -38,19 +38,19 @@ Podstawy programowania:
 6. 
 7. 
 8. 
-9. Program obliczający średnią ważoną trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
+9. 
 */
 
 //Program obliczający średnią arytmetyczną dwóch liczb.
 void task1()
 {
-    double firstnumber, secondnumber;
+    double firstNumber, secondNumber;
     std::cout << "wpissz pierwsza liczbe \n";
-    std::cin >> firstnumber;
+    std::cin >> firstNumber;
     std::cout << "wpisz druga liczbe \n";
-    std::cin >> secondnumber;
+    std::cin >> secondNumber;
 
-    double avarage = (firstnumber + secondnumber) / 2;
+    double avarage = (firstNumber + secondNumber) / 2;
     std::cout << "srednia arytmetyczna :" << avarage;
 }
 //Program obliczający pole prostokąta.
@@ -141,18 +141,18 @@ void task8()
 void task9()
 {
     double w1, w2, w3, a, b, c;
-    std::cout << "podaj piewsza wage";
+    std::cout << "Podaj piewsza wage: ";
     std::cin >> w1;
-    std::cout << "podaj druga waga";
+    std::cout << "Podaj druga waga: ";
     std::cin >> w2;
-    std::cout << "podaj trzecia waga";
+    std::cout << "Podaj trzecia waga: ";
     std::cin >> w3;
 
-    std::cout << "podaj liczbe o wadze " << w1;
+    std::cout << "Podaj liczbe o wadze " << w1;
     std::cin >> a;
-    std::cout << "podaj liczbe o wadze " << w2;
+    std::cout << "Podaj liczbe o wadze " << w2;
     std::cin >> b;
-    std::cout << "podaj liczbe o wadze " << w3;
+    std::cout << "Podaj liczbe o wadze " << w3;
     std::cin >> c;
 
     double wigth = ((a * 1.0 * w1) + (b * w2) + (c * w3));
