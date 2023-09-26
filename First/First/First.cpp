@@ -1,5 +1,4 @@
-﻿﻿// FirstConsoleApplication.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+﻿
 #define _USE_MATH_DEFINES
 #include <iostream>
 
@@ -75,7 +74,7 @@ void task3()
     std::cout << "podaj h \n";
     std::cin >> h;
 
-    double results = ((M_PI/3)*r^2*h);
+    double results = ((M_PI/3)*(r * r)*h);
     std::cout << "objetosc stozka wynosi:" << results;
 }
 //Program obliczający pole koła.
@@ -86,28 +85,28 @@ void task4()
     std::cout << "podaj r";
     std::cin >> circle;
 
-    double resultc = ((M_PI / 1.0/ 2) * (r * r));
+    double resultc = ((M_PI / 1.0/ 2) * (circle * circle));
     std::cout << "pole kola wynosi:" << resultc;
 }
 //Program obliczający wartość wyrażenia a^2 + b^2
 void task5()
 {
     double a, b;
-    std::cout << "podaj pierwsza liczbe: n\";
+    std::cout << "podaj pierwsza liczbe: \n";
     std::cin >> a;
-    std::cout << "podaj druga liczbe: n\";
+    std::cout << "podaj druga liczbe: \n";
     std::cin >> b;
 
-    double resultab = a^2 + b^2;
+    double resultab = (a * a) + (b * b);
     std::cout << "wynik wynosi:" << resultab;
 }
 //Program obliczający pole trójkąta o podstawie b i wysokości h
 void task6()
 {
     double b, h;
-    std::cout << "podaj wysokosc: n\";
+    std::cout << "podaj wysokosc: \n";
     std::cin >> h;
-    std::cout << "podaj podstawe: n\";
+    std::cout << "podaj podstawe: \n";
     std::cin >> b;
 
     double resultt = (b * h) / 2;
