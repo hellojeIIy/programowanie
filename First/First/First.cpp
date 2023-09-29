@@ -1,6 +1,4 @@
-﻿﻿// FirstConsoleApplication.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-#define _USE_MATH_DEFINES
+﻿#define _USE_MATH_DEFINES
 #include <iostream>
 
 void test()
@@ -32,35 +30,35 @@ void test()
 Podstawy programowania:
 
 1.
-2. 
-3. Program obliczający objętość stożka.
-4. Program obliczający pole koła.
-5. Program obliczający wartość wyrażenia a^2 + b^2
-6. Program obliczający pole trójkąta o podstawie b i wysokości h
-7. Program obliczający objętość kuli o promieniu r
-8. Program obliczający pole trapezu o podstawach a i b oraz wysokości h
-9. Program obliczający średnią ważoną trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
 */
 
 //Program obliczający średnią arytmetyczną dwóch liczb.
 void task1()
 {
-    double firstnumber, secondnumber;
+    double firstNumber, secondNumber;
     std::cout << "wpissz pierwsza liczbe \n";
-    std::cin >> firstnumber;
+    std::cin >> firstNumber;
     std::cout << "wpisz druga liczbe \n";
-    std::cin >> secondnumber;
+    std::cin >> secondNumber;
 
-    double avarage = (firstnumber + secondnumber) / 2;
+    double avarage = (firstNumber + secondNumber) / 2;
     std::cout << "srednia arytmetyczna :" << avarage;
 }
 //Program obliczający pole prostokąta.
 void task2()
 {
     double a, b;
-    std::cout << "podaj pierwszy bok";
+    std::cout << "podaj pierwszy bok \n";
     std::cin >> a;
-    std::cout << "podaj drugi bok";
+    std::cout << "podaj drugi bok \n";
     std::cin >> b;
 
     double resultk = a * b;
@@ -70,22 +68,107 @@ void task2()
 void task3()
 {
     double r, h;
+    std::cout << "podaj r \n";
+    std::cin >> r;
+    std::cout << "podaj h \n";
+    std::cin >> h;
+
+    double results = ((M_PI / 3) * (r * r) * h);
+    std::cout << "objetosc stozka wynosi:" << results;
+}
+//Program obliczający pole koła.
+void task4()
+{
+
+    double circle;
+    std::cout << "podaj r";
+    std::cin >> circle;
+
+    double resultc = ((M_PI / 1.0 / 2) * (circle * circle));
+    std::cout << "pole kola wynosi:" << resultc;
+}
+//Program obliczający wartość wyrażenia a^2 + b^2
+void task5()
+{
+    double a, b;
+    std::cout << "podaj pierwsza liczbe: \n";
+    std::cin >> a;
+    std::cout << "podaj druga liczbe: \n";
+    std::cin >> b;
+
+    double resultab = (a * a) + (b * b);
+    std::cout << "wynik wynosi:" << resultab;
+}
+//Program obliczający pole trójkąta o podstawie b i wysokości h
+void task6()
+{
+    double b, h;
+    std::cout << "podaj wysokosc: \n";
+    std::cin >> h;
+    std::cout << "podaj podstawe: \n";
+    std::cin >> b;
+
+    double resultt = (b * h) / 2;
+    std::cout << "pole trojkata:" << resultt;
+}
+//Program obliczający objętość kuli o promieniu r
+void task7()
+{
+    double r;
     std::cout << "podaj r";
     std::cin >> r;
+
+    double ball = ((4.0 / 3) * M_PI * (r * r * r));
+    std::cout << "objetsosc kuli wynosi:" << ball;
+
+}
+//Program obliczający pole trapezu o podstawach a i b oraz wysokości h
+void task8()
+{
+    double a, b, h;
+    std::cout << "podaj a";
+    std::cin >> a;
+    std::cout << "podaj b";
+    std::cin >> b;
     std::cout << "podaj h";
     std::cin >> h;
 
-    double results = ((M_PI/3)*r^2*h);
-    std::cout << "objetosc stozka wynosi:" << results;
+    double weirdbox = (((a + b) * h) / 2);
+    std::cout << "pole trapezu:" << weirdbox;
 }
-//
-void task4
+//Program obliczający średnią ważoną trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
+void task9()
+{
+    double w1, w2, w3, a, b, c;
+    std::cout << "Podaj piewsza wage: ";
+    std::cin >> w1;
+    std::cout << "Podaj druga waga: ";
+    std::cin >> w2;
+    std::cout << "Podaj trzecia waga: ";
+    std::cin >> w3;
 
+    std::cout << "Podaj liczbe o wadze " << w1;
+    std::cin >> a;
+    std::cout << "Podaj liczbe o wadze " << w2;
+    std::cin >> b;
+    std::cout << "Podaj liczbe o wadze " << w3;
+    std::cin >> c;
+
+    double wigth = ((a * 1.0 * w1) + (b * w2) + (c * w3));
+    std::cout << "srednia wazona wynosi:" << wigth;
+}
 int main()
 {
     //test();
     //task1();
     //task2();
+    //task3();
+    //task4();
+    //task5();
+    //task6();
+    //task7();
+    //task8();
+    //task9();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
