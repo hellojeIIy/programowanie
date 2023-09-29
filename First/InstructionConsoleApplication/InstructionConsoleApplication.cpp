@@ -1,6 +1,6 @@
 ﻿
 #include <iostream>
-//1.napisz funkcje ktora podzieli dwie liczby.
+//1.napisz funkcje ktora podzieli dwie liczby
 void task1()
 {
     double FirstNumber, SecondNumber;
