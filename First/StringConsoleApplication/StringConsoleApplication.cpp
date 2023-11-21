@@ -22,7 +22,15 @@ void task1()
 	signFromUser = 'a' + 2;
 	std::cout << "podales znak" << signFromUser << "\n";
 }
+void task2()
+{
+	std::string userName;
+	//userName = "Ala";
+	std::cout << "Podaj swoje imie\n";
+	std::cin >> userName;
 
+	std::cout << "Witaj " << userName << "tutaj.\n";
+}
 int main()
 {
 
