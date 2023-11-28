@@ -1,6 +1,8 @@
 ﻿#include <iostream>
 #include <string>
 
+using namespace std;
+
 /*
 * Napisz program, który będzie prosił o hasło. Nie przepuści dalej dopóki nie zostanie ono podane prawidłowo.
 * Napisz program, który pobiera od użytkownika ciąg znaków i wyświetla liczbę samogłosek i spółgłosek w tym ciągu.
@@ -75,21 +77,64 @@ void task3()
     std::cout << "Małych liter 'a' jest " << counter << "\n";
 }
 
-//* Napisz program, który będzie prosił o hasło. Nie przepuści dalej dopóki nie zostanie ono podane prawidłowo.
+// Napisz program, który będzie prosił o hasło. Nie przepuści dalej dopóki nie zostanie ono podane prawidłowo.
 void task4()
 {
     std::string password = "haslo";
     std::string guess;
-    std::cout << "podaj haslo";
+    std::cout << "podaj haslo\n";
     std::cin >> guess;
     while (guess != password)
     {
-
+        std::cout << "haslo niepoprawne\n";
+        std::cout << "podaj haslo\n";
+        std::cin >> guess;
     }
+    if (guess == password)
+    { 
+        std::cout << "haslo poprawne\n";
+    }
+}
+//Napisz program, który pobiera od użytkownika ciąg znaków i wyświetla liczbę samogłosek i spółgłosek w tym ciągu.
+void task5()
+{
+    std::string ciag;
+    std::cout << "podaj ciag znakow\n";
+    std::cin >> ciag;
+    int counterOfVowels, counterOfCononant;
+    counterOfCononant = 0;
+    counterOfVowels = 0;
+    for (int i = 0;i < ciag.length();i++)
+    {
+        if (ciag[i] == 'a' || ciag[i] == 'e' || ciag[i] == 'i' || ciag[i] == 'o' || ciag[i] == 'u' || ciag[i] == 'y' || ciag[i] == 'A' || ciag[i] == 'E' || ciag[i] == 'I' || ciag[i] == 'O' || ciag[i] == 'U' || ciag[i] == 'Y')
+        {
+            counterOfVowels++;
+        }
+        else
+        {
+            counterOfCononant++;
+
+        }
+    }
+    std::cout << "samoglosek w tym ciagu znakow jest:" << counterOfVowels << "\n";
+    std::cout << "spolglosek w tym ciagu znakow jest:" << counterOfCononant << "\n";
+
+    system("pause");
+}
+//Poproś użytkownika o wprowadzenie liczby całkowitej w systemie dziesiętnym. Następnie skonwertuj tę liczbę na system dwójkowy (binarny) i wyświetl wynik.
+void task6()
+{
+
+}
+void task7()
+{
+    std::string znaki;
+
 }
 
 int main()
 {
-    task3();
+    //task4();
+    //task5();
 }
 
