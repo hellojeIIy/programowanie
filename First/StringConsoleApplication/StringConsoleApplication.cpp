@@ -124,11 +124,53 @@ void task5()
 //Poproś użytkownika o wprowadzenie liczby całkowitej w systemie dziesiętnym. Następnie skonwertuj tę liczbę na system dwójkowy (binarny) i wyświetl wynik.
 void task6()
 {
+        int number;
+        int rest;
+        std::string binaryNumber = "";
 
+        std::cout << "Podaj liczbe\n";
+        std::cin >> number;
+
+        do
+        {
+            rest = number % 2;
+            if (rest == 0)
+                binaryNumber = "0" + binaryNumber;
+            else
+                binaryNumber = "1" + binaryNumber;
+            //std::cout << rest;
+            number = number / 2;
+        } while (number != 0);
+
+        std::cout << "Liczba binarnie " << binaryNumber << "\n";
 }
+
+//Program sprawdzający czy podany ciąg znaków jest palindromem (czyli takim, który czytany od tyłu jest taki sam, jak czytany od przodu, np. "kajak")
 void task7()
 {
     std::string znaki;
+    std::cout << "podaj cziag znakow";
+    std::cin >> znaki;
+
+    std::string reverseznaki = "";
+
+    for (int i = 0; i < znaki.length(); i++)
+    {
+        reverseznaki = znaki[i] + reverseznaki;
+    }
+    if (reverseznaki == znaki)
+    {
+        std::cout << "to jest palindrom";
+    }
+    else
+    {
+        std::cout << "to nie jest palindrom";
+    }
+}
+
+//Program sprawdzający czy podane dwa słowa są anagramami(czyli takimi, które zawierają te same litery, ale w innym układzie, np. "klasa" i "salka")
+void task8()
+{
 
 }
 
